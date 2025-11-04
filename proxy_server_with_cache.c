@@ -110,7 +110,13 @@ int main(int argc, char* argv[]){
         client_socketId = accept(proxy_socketId, (struct sockaddr *)&client_addr, (socklen_t*)&client_len);
     }
 
-
+    if(client_socketId < 0){
+            printf("Not able to connect\n");
+            exit(1);
+    }
+    else{
+        Connected_socketId[i] = client_socketId; 
+    }
 
 }
 
