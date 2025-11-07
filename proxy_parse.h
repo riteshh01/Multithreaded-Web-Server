@@ -182,4 +182,7 @@ void debug(const char * format, ...);
    ParsedRequest_destroy(req);
 */
 
+typedef struct ParsedRequest ParsedRequest;
+typedef struct ParsedHeader ParsedHeader;
+
 #endif
